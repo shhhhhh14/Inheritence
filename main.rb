@@ -1,6 +1,6 @@
 #Inheritence Assignment 30070 - 12422628
   class Main
-    require_relative 'person'
+    require_relative 'person' #the library of the 'string' is loaded and made available to the class
     require_relative 'employee'
     require_relative 'manager'
     require_relative 'volunteer'
