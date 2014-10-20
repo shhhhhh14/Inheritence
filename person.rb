@@ -17,10 +17,10 @@ class Person
     elsif(self.class == Manager) # managers get €12 an hour basic pay and €100 bonus
       puts "#{self.name} earns €#{(self.hours * self.pay) + self.bonus} per week, which includes a bonus of €#{self.bonus}. PPSN: #{self.pps_number}, "
 
-    elsif(self.class == Volunteer) #if the volunteer does the work of an employee for no wage
+    elsif(self.class == Volunteer) #volunteer does the work of an employee for no wage
       puts "#{self.name} is a volunteer from #{self.charity}. PPSN: #{self.pps_number}"
 
-    elsif(self.class == Volunteer && self.bonus !=0) #if the volunteer is a manager too they get a bonus
+    elsif(self.class == Volunteer && self.bonus !=0) #volunteer is a manager too they get a bonus
       puts "#{self.name} is a volunteer and manager from #{self.charity} and receives a bonus of €#{self.bonus}. PPSN: #{self.pps_number}"
     end
   end
